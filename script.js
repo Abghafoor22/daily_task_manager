@@ -20,6 +20,8 @@ themeToggleBtn.addEventListener('click', () => {
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 let currentFilter = 'today';
 
+document.querySelector(`.filter-btn[data-filter="${currentFilter}"]`).classList.add('active');
+
 function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
