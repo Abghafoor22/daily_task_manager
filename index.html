@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Task Manager - Advanced</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-section">
+      <div>
+        <h1>Daily Task Manager</h1>
+        <h2>Organize your tasks efficiently</h2>
+      </div>
+      <button id="themeToggleBtn">Switch Theme</button>
+    </div>
+
+    <div class="filter-section">
+      <button class="filter-btn active" data-filter="all">All Tasks</button>
+      <button class="filter-btn" data-filter="today">Today</button>
+      <button class="filter-btn" data-filter="tomorrow">Tomorrow</button>
+      <button id="clearCompletedBtn">Clear Completed</button>
+    </div>
+
+    <form class="task-form">
+      <input type="text" id="taskInput" placeholder="Add new task..." />
+      <input type="date" id="taskDateInput" />
+      <select id="prioritySelect">
+        <option value="Low">Low</option>
+        <option value="Normal" selected>Normal</option>
+        <option value="High">High</option>
+      </select>
+      <button type="button" id="addTaskBtn">Add Task</button>
+    </form>
+
+    <div class="task-grid" id="taskGrid">
+      <div class="grid-header">Date</div>
+      <div class="grid-header">Task</div>
+      <div class="grid-header">Priority</div>
+      <div class="grid-header">Status</div>
+      <div class="grid-header">Actions</div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+  </body>
+</html>
