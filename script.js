@@ -18,7 +18,7 @@ themeToggleBtn.addEventListener('click', () => {
 
 // Task Manager
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-let currentFilter = 'all';
+let currentFilter = 'today';
 
 function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
